@@ -165,7 +165,7 @@ p { margin: 0 0 1em; }
 
 .gallery-grid { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
 .gallery-grid figure { margin: 0; background: var(--white); }
-.gallery-grid img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; background: #d6d2cc; }
+.gallery-grid img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #d6d2cc; }
 .gallery-grid figcaption { padding: 10px 2px 0; font-weight: 500; font-size: .95rem; }
 
 .split { display: grid; gap: 28px; align-items: start; }
@@ -255,3 +255,4 @@ fieldset.field { border: 0; padding: 0; margin: 0; }
   .split { grid-template-columns: 1.4fr 1fr; gap: 48px; }
   .form .two { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 }
+.botcheck { display: none; }

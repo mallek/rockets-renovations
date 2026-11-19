@@ -53,10 +53,13 @@
       <div class="wrap split">
         <div id="quote">
           <h2>Request a Free Estimate</h2>
-          <!-- PLACEHOLDER: this form is layout only. It is not connected to anything yet.
-               To make it work, point action="" at a form service (Formspree, Netlify Forms, etc.)
-               and remove the data-not-connected attribute. -->
-          <form class="form" action="#" method="post" data-not-connected>
+          <!-- Quote form posts to Web3Forms, which emails the request to the business.
+               The access key is public by design. js/site.js sends it without leaving the page. -->
+          <form class="form" action="https://api.web3forms.com/submit" method="post" data-web3form>
+            <input type="hidden" name="access_key" value="70d75b92-6088-4569-885a-8053598d9b10">
+            <input type="hidden" name="subject" value="New estimate request from rocketsrenovations.com">
+            <input type="hidden" name="from_name" value="Rockets Renovations website">
+            <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
             <div class="two">
               <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
               <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required></div>

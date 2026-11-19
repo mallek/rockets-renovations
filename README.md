@@ -10,10 +10,10 @@ Plain HTML and CSS. No build step. Works on GitHub Pages as is (publish from the
 Replace those files and keep the same names. A new logo with a different shape may need its height adjusted in `css/style.css` (`.logo img` and `.footer-logo img`).
 
 ## Swap photos
-Every photo is a labeled placeholder in `images/`. Replace a file with a real job photo of the same name. Photos are cropped to fit, so any landscape photo works (about 1200×800 or larger; the hero should be about 1800×1000).
+Photos in `images/` are real job photos from the client's shared album, cropped, resized and with location metadata stripped. To change one, replace the file and keep the same name. Sizes: gallery tiles (`kitchen-*`, `bathroom-*`, `outdoor-*`, `bedroom-*`) are square, 1200×1200. Home page strip (`home-*`) is 1200×800. `hero-kitchen.jpg` is 1800×1000 and `about-home.jpg` is 1200×900. Strip EXIF before adding new photos, since phone photos carry the GPS location of the customer's house.
 
 ## Colors
 All colors are in the `:root` block at the top of `css/style.css`.
 
 ## Quote form
-`contact.html` has the form layout only. It is not connected to anything yet. See the comment above the form.
+`contact.html` posts to Web3Forms, which emails each request to the inbox the access key was created for. The key is in a hidden field in the form and is public by design. To send leads to a different inbox, create a new key at web3forms.com with that address and swap it in. Test from a browser on the live site: the free plan rejects server-side requests.
