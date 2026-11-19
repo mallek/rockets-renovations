@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Rockets Renovations</title>
+  <meta name="description" content="Request a free estimate from Rockets Renovations. Call 970-818-1518 or email RocketsRenovations@gmail.com.">
+  <meta property="og:title" content="Contact | Rockets Renovations">
+  <meta property="og:description" content="Request a free estimate from Rockets Renovations. Call 970-818-1518 or email RocketsRenovations@gmail.com.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#2d2c2b">
+  <link rel="icon" href="brand/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="brand/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="brand/apple-touch-icon.png">
+  <link rel="preload" href="fonts/montserrat-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.remove("no-js")</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html"><img src="brand/logo-light.svg" alt="Rockets Renovations home" width="146" height="60"></a>
+      <nav class="main-nav" id="main-nav" aria-label="Main">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-gold header-phone" href="tel:+19708181518"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>970-818-1518</a>
+        <a class="call-icon" href="tel:+19708181518" aria-label="Call 970-818-1518"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow">Free Estimates</p>
+        <h1>Contact Us</h1>
+        <hr class="rule">
+        <p>Call, email, or send a quote request. We&rsquo;ll get back to you.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split">
+        <div id="quote">
+          <h2>Request a Free Estimate</h2>
+          <!-- PLACEHOLDER: this form is layout only. It is not connected to anything yet.
+               To make it work, point action="" at a form service (Formspree, Netlify Forms, etc.)
+               and remove the data-not-connected attribute. -->
+          <form class="form" action="#" method="post" data-not-connected>
+            <div class="two">
+              <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+              <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required></div>
+            </div>
+            <div class="two">
+              <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"></div>
+              <div class="field"><label for="town">City or town</label><input id="town" name="town" type="text" autocomplete="address-level2"></div>
+            </div>
+            <div class="field">
+              <label for="project">Type of project</label>
+              <select id="project" name="project">
+                <option value="">Choose one</option>
+                <option>Kitchen remodel</option>
+                <option>Bathroom remodel</option>
+                <option>Basement finish</option>
+                <option>Whole home remodel</option>
+                <option>Repair</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="field"><label for="details">Tell us about your project <span class="hint">(optional)</span></label><textarea id="details" name="details"></textarea></div>
+            <fieldset class="field">
+              <legend>Best way to reach you</legend>
+              <div class="radio-row">
+                <label><input type="radio" name="contact_pref" value="call" checked> Call</label>
+                <label><input type="radio" name="contact_pref" value="email"> Email</label>
+              </div>
+            </fieldset>
+            <button class="btn btn-gold arrow" type="submit">Send Request</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <div>
+          <h2>Call or Email</h2>
+          <div class="contact-methods">
+            <a class="contact-link" href="tel:+19708181518"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span><small>Call</small>970-818-1518</span></a>
+            <a class="contact-link" href="mailto:RocketsRenovations@gmail.com?subject=Estimate%20request"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 7l9 6 9-6"/></svg><span><small>Email</small>RocketsRenovations@gmail.com</span></a>
+          </div>
+          <div class="panel" id="service-area" style="margin-top:24px">
+            <h2>Service Area</h2>
+            <p style="margin:0">We work in Longmont, CO and the surrounding areas. Not sure if you&rsquo;re in our area? Give us a call.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="wrap cta-inner">
+        <div class="cta-text">
+          <h2 id="cta-title">Ready to Start<br class="br-wide"> Your Renovation?</h2>
+          <p>Let&rsquo;s bring your ideas to life. Contact us today for a free estimate.</p>
+        </div>
+        <div class="cta-contact">
+          <a class="cta-phone" href="tel:+19708181518"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>970-818-1518</a>
+          <p class="cta-place"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Longmont, CO<br>and Surrounding Areas</span></p>
+        </div>
+        <div class="cta-buttons">
+          <a class="btn btn-gold arrow" href="contact.html#quote">Request a Free Estimate</a>
+          <a class="btn btn-outline-light arrow" href="contact.html#service-area"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>View Our Service Area</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a class="footer-logo" href="index.html"><img src="brand/logo-light.svg" alt="Rockets Renovations home" width="156" height="64"></a>
+      <nav class="footer-nav" aria-label="Footer">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-side">
+        <p class="tagline">We launch your dreams into reality.</p>
+        <p class="footer-contact"><a href="tel:+19708181518">970-818-1518</a><br><a href="mailto:RocketsRenovations@gmail.com">RocketsRenovations@gmail.com</a></p>
+        <p class="fine">Serving Longmont, CO and surrounding areas. &copy; <span data-year>2026</span> Rockets Renovations</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="call-bar">
+    <a class="btn btn-gold" href="tel:+19708181518"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call Now</a>
+    <a class="btn btn-outline-light" href="contact.html#quote">Free Estimate</a>
+  </div>
+
+  <script src="js/site.js"></script>
+</body>
+</html>
