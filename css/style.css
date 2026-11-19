@@ -61,7 +61,7 @@ p { margin: 0 0 1em; }
 .header-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0 12px; min-height: 68px; }
 .main-nav { order: 3; width: 100%; }
 .logo { display: block; }
-.logo img { height: 50px; width: auto; }
+.logo img { height: 52px; width: auto; }
 .header-actions { display: flex; align-items: center; gap: 8px; }
 .call-icon { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: var(--radius); background: var(--gold-button); color: var(--white); }
 .call-icon svg { width: 22px; height: 22px; }
